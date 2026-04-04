@@ -9,19 +9,34 @@
     --img-border: 1px solid black;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: #18786f;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    justify-content: space-evenly;
+    font-family: serif;
+
 }
 
 h1 {
     color: #034F3B;
+    border-bottom: 2px solid black;
 }
 
 h2 {
@@ -44,12 +59,15 @@ p {
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
 }
 
 aside {
     width: 20rem;
     text-align: var(--text-align);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -79,4 +97,9 @@ footer {
     padding: 1rem;
     background-color: #96beba;
     border: 1px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

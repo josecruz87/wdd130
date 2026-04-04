@@ -7,6 +7,8 @@ body {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -17,6 +19,11 @@ body {
     padding: 0.5rem;
     background-color: #bbb;
     color: #333;
+}
+
+main div {
+    list-style-type: none;
+    display: flex;
 }
 
 .item1 {
