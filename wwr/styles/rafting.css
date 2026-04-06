@@ -29,6 +29,18 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+
+}
+
+header img {
+    width: 160px;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -41,6 +53,28 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+.wrapimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+
+}
+
+.wrapimg img {
+    width: 120%;
+    position: relative;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    flex: 1 1 auto;
 }
 
 .socialmedia a {
