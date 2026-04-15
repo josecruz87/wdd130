@@ -422,6 +422,7 @@ tfoot tr {
     margin: 5px auto 1rem auto;
     background-size: contain;
     width: 50%;
+    padding: 0%;
 }
 
 .link-trips {
