@@ -128,12 +128,14 @@ nav a {
 }
 
 .hero,
-.home-hero {
+.home-hero,
+.trips-hero {
     position: relative;
 }
 
 .hero img,
-.home-hero img {
+.home-hero img,
+.trips-hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -158,6 +160,15 @@ h1 {
     text-shadow: 2px 2px 8px rgb black;
     letter-spacing: 1px;
 
+}
+
+.trips-title {
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    background-color: transparent;
+    opacity: 100;
+    text-shadow: 2px 2px 8px rgb black;
+    letter-spacing: 1px;
 }
 
 .information h1 {
@@ -310,10 +321,11 @@ button {
     padding: 8px;
 }
 
-.home-grid {
+.home-grid,
+.trip-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     padding: 2rem;
     margin-bottom: 20px;
 }
@@ -371,4 +383,47 @@ button {
     background-color: transparent;
     color: var(--secondary-color);
 
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+}
+
+thead th,
+tfoot tr {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: 700;
+}
+
+.trips-table-main h2 {
+    font-size: 36px;
+    color: var(--secondary-color);
+    font-family: "Shadows Into Light", cursive;
+    background-color: transparent;
+    opacity: 100;
+    text-shadow: 2px 2px 8px rgb black;
+    letter-spacing: 1px;
+    color: #050505;
+    margin: 5px auto 1rem auto;
+    background-size: contain;
+    width: 50%;
+}
+
+.link-trips {
+    margin-top: 50px;
 }
